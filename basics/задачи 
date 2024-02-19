@@ -1,0 +1,61 @@
+; ; СЛОВАРЬ 
+; ; Задание 13
+; ; Создайте словарь, затем поменяйте местами ключи и значения. Распечайте полученный результат.
+
+; ; Ввод:
+
+; ; a = {'a': 1, 'b': 2, 'c': 3} 
+; ; Вывод:
+
+; ; {1: 'a', 2: 'b', 3: 'c'} 
+
+; ; РЕШЕНИЕ
+; a = {'a': 1, 'b': 2, 'c': 3} 
+; b={}
+; for k,v in a.items():
+;     b[v]=k
+; print(b)
+
+; Задание 23
+; Дан словарь dict1, где ключами будут цены товаров, а значениями их названия, затем пройдитесь циклом по нему и поменяйте все ключи элементов, возведя их в квадрат, новые элементы запишите в словарь dict2
+
+; Ввод:
+
+; dict1 = {25: 'apple', 26: 'orange', 27: 'banana'} 
+; dict2 = {}
+; Вывод:
+; {625: 'apple', 676: 'orange', 729: 'banana'}
+
+; решение 
+; dict1 = {25: 'apple', 26: 'orange', 27: 'banana'} 
+; dict2 = {}
+; for k,v in  dict1.items():
+;     dict2[k**2]=v
+;     print(dict2)
+
+;     Задание 24
+; Дан список. Создайте словарь dict_, ключами которого будут строки из списка, а значениями их длины
+; list_ = ['Bootcamp', 'Makers', 'coding', 'hello']
+; dict_ = {}
+; Вывод:
+; {'Bootcamp': 8, 'Makers': 6, 'coding': 6, 'hello': 5}
+; решение
+; list_ = ['Bootcamp', 'Makers', 'coding', 'hello'] 
+; dict_ = {} 
+; for item in list_: 
+;     dict_[item] = len(item) 
+;     print(dict_)
+
+
+
+
+; set1 = {x for x in range(0, 11) if x % 2 == 0} 
+; set2 = {x for x in range(0, 11) if x % 2 != 0} 
+; if set1.intersection(set2): 
+; print('Множества пересекаются!') 
+; else: print('Множества не пересекаются!')
+
+
+n=int(input())
+dict_={x:x**2 for x in range(1,501) if x%2==0}
+print(dict_)
