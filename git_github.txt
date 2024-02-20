@@ -19,3 +19,5 @@ AIDAI KYDYKOVA
 Стягиваем изменения из удаленного репазитория
 1. git clone (ссылка)
 2.git pull origin master 
+
+

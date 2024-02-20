@@ -1,7 +1,3 @@
-number=int(input())
-if number >0:
-    print('True')
-elif number==0:
-    print('0')
-else:
-    print('False')
+def add(x,y):
+    return x+y 
+print(add(5+1))

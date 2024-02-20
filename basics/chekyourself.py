@@ -1,2 +1,1 @@
-a=('hello world')
-print(a)
+print(abs(-10))
