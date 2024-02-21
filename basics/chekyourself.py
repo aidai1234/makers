@@ -1,2 +1,1 @@
-a=('hello world')
-print(a)
+min(3,4,6)
